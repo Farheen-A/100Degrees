@@ -1,0 +1,239 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frg_blank_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tooluser"
+            layout="@layout/coordinate_toolbar" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tooluser"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/proName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:text="Farheen"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/plinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/pmj"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/linear"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight=".35"
+                        android:padding="5dp"
+                        android:text="Major"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorheading" />
+
+                    <TextView
+                        android:id="@+id/proMajor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".65"
+                        android:padding="5dp"
+                        android:text="Computer science"
+                        android:textColor="@color/colortext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/plinearUni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plinear"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:id="@+id/puni"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight=".35"
+                        android:padding="5dp"
+                        android:text="University"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorheading" />
+
+                    <TextView
+
+                        android:id="@+id/proUniversity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight=".65"
+                        android:padding="5dp"
+                        android:text="University"
+                        android:textColor="@color/colortext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/plinearAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plinearUni"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:id="@+id/page"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight=".35"
+                        android:padding="5dp"
+                        android:text="Age          "
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorheading" />
+
+                    <TextView
+
+                        android:id="@+id/proAge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight=".65"
+                        android:hint="19"
+                        android:padding="5dp"
+                        android:textColor="@color/colortext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/plinearGen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plinearAge"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/pgen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight=".35"
+                        android:padding="5dp"
+                        android:paddingLeft="2dp"
+                        android:text="Gender      "
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorheading" />
+
+                    <TextView
+                        android:id="@+id/progender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight=".65"
+                        android:hint="Gender"
+                        android:padding="5dp"
+                        android:textColor="@color/colortext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/plinearAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plinearGen"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="vertical"
+                    android:paddingLeft="2dp">
+
+                    <TextView
+                        android:id="@+id/pdes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:padding="2dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:text="About me"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorheading" />
+
+                    <TextView
+                        android:id="@+id/proabout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:hint="Hi, I am........"
+                        android:textColor="@color/colortext" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

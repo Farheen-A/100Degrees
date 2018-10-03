@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/sportsdetail"
+    tools:context="com.degree.college.Fragment.Sportsdetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/detail_tool" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgSportsDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/sportsDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgSportsDetail"
+                    android:layout_alignStart="@+id/imgSportsDetail"
+                    android:background="#29c675"
+                    android:hint="Sports Date"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+                <TextView
+                    android:id="@+id/sportsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sportsDate"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Sports Name"
+                    android:textColor="@color/colorheading"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/SportDtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sportsName"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_watch" />
+
+                    <TextView
+                        android:id="@+id/sportsTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colortext"
+                        android:layout_weight=".9"
+                        android:hint="Sports Time"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SportDplc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SportDtime"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/sportsLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:textSize="16sp"
+                        android:hint="Sports Location"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/teamstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SportDplc"
+                    android:layout_marginLeft="10dp"
+                    android:text="Teams"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorheading"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/DteamIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_below="@+id/teamstxt"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/team1"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50"
+                        android:src="@drawable/ic_watch" />
+
+                    <ImageView
+                        android:id="@+id/team2"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50"
+                        android:src="@drawable/ic_watch" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DteamIcon"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/Ddescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:padding="5dp"
+                        android:textColor="@color/colorheading"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sportsDesription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="9.55"
+                        android:textSize="16sp"
+                        android:textColor="@color/colortext"
+                        android:hint="Sports Description"
+                        android:padding="10dp" />
+                    <Button
+                        android:id="@+id/buybtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/s_pass"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_shape"
+                        android:text="Buy Tickets" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imgSportsDetail"
+                    android:layout_alignTop="@+id/imgSportsDetail"
+
+                    android:background="#d64852"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

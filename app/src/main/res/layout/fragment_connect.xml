@@ -1,0 +1,226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.degree.college.Fragment.ConnectFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/detail_tool"
+            android:id="@+id/tooluser"/>
+        <ScrollView
+            android:layout_below="@id/tooluser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/scrollView"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:id="@+id/proName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:text="Farheen"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/frndconbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_shape"
+                        android:text="Connect"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plinear"
+                    android:paddingLeft="2dp"
+                    android:background="@drawable/linearstyle"
+                    android:layout_below="@+id/linear"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight=".35"
+                        android:id="@+id/pmj"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:layout_below="@+id/linear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Major"/>
+
+                    <TextView
+                        android:id="@+id/proMajor"
+                        android:layout_weight=".65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear"
+                        android:textColor="#000"
+                        android:layout_margin="5dp"
+                        android:hint="Computer science"
+                        android:padding="5dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plinearUni"
+                    android:paddingLeft="2dp"
+                    android:background="@drawable/linearstyle"
+                    android:layout_below="@+id/plinear"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:id="@+id/puni"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:layout_weight=".35"
+                        android:padding="5dp"
+                        android:layout_below="@+id/linear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="University"/>
+                    <TextView
+
+                        android:id="@+id/proUniversity"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_weight=".65"
+                        android:textColor="#000"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="University"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/linearstyle"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:id="@+id/plinearAge"
+                    android:layout_below="@id/plinearUni"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+
+                        android:id="@+id/page"
+                        android:layout_weight=".35"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Age          "/>
+                    <TextView
+
+                        android:id="@+id/proAge"
+                        android:padding="5dp"
+                        android:layout_weight=".65"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:hint="19"
+                        /></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/linearstyle"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plinearGen"
+                    android:layout_below="@+id/plinearAge"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:id="@+id/pgen"
+                        android:layout_margin="5dp"
+                        android:paddingLeft="2dp"
+                        android:textStyle="bold"
+                        android:layout_weight=".35"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Gender      "/>
+                    <TextView
+                        android:id="@+id/progender"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".65"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:hint="Gender"/></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearstyle"
+                    android:id="@+id/plinearAbout"
+                    android:paddingLeft="2dp"
+                    android:layout_below="@id/plinearGen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pdes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="About me"
+                        android:paddingLeft="5dp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/proabout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#000"
+                        android:hint="Hi, I am........"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="10dp"/></LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

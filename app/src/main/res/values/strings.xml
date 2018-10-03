@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">100 degrees</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Enter your email address to request a password reset.</string>
+    <string name="forgotpass">Enter your email address to request a password</string>
+    <string name="sendbird">6F6EC549-6054-493B-8210-E4FECE07716C</string>
+
+    <string name="facebook_app_id">534703650308418</string>
+    <string name="fb_login_protocol_scheme">fb534703650308418</string>
+    <string name="googleapi">AIzaSyCGyPoTRuKznjFTwQv9a34x5PVVMmkgkEw</string>
+    <string name="google_maps_key">AIzaSyCFC-wGmResevvkjrykupXfI0GbtbeHbYY</string>
+    <string name="title_activity_location">Map</string>
+
+</resources>

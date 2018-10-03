@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tfragment"
+    android:background="#E0E0E0"
+    tools:context="com.degree.college.Fragment.TutorFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lists"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/detail_tool"
+            android:id="@+id/toolBar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_below="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#798c7e7e"
+            android:dividerHeight="1dp"
+            />
+    </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tryframe"
+        android:layout_height="match_parent"></FrameLayout>
+</FrameLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/eventrowImg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.04" />
+
+        <TextView
+            android:id="@+id/sportsnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorred"
+            android:forceHasOverlappingRendering="true"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:id="@+id/event_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventrowImg"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/evedate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:background="#29c675"
+                android:gravity="center"
+                android:text="  Sep
+ 27"
+                android:textSize="17sp"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".85"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eveName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Sports"
+                    android:textColor="@color/colorheading"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_weight=".12"
+                        android:id="@+id/evetime"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_watch" />
+
+                    <TextView
+                        android:id="@+id/timeeve"
+                        android:layout_weight=".88"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:gravity="center|start"
+                        android:textSize="16sp"
+                        android:textColor="@color/colortext"
+                        android:text="12:00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/evelocate"
+                        android:layout_weight=".12"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/evetime"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/evelocation"
+                        android:layout_weight=".88"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|start"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="New Delhi" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="ed_hight">40dp</dimen>
+    <dimen name="ed_lhight">50dp</dimen>
+    <dimen name="ed_xhight">60dp</dimen>
+</resources>

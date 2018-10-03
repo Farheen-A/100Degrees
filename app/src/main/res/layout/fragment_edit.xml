@@ -1,0 +1,226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.degree.college.Fragment.EditFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/coordinate_toolbar" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolBar"
+            android:layout_marginBottom="60dp"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgprofile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <EditText
+                        android:id="@+id/nameprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editshape"
+                        android:padding="3dp"
+                        android:textColor="@color/colorheading" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearprofile"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/textmajor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Major"
+                        android:textColor="@color/colortext"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/maj_spin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="5dp"></Spinner>
+
+
+                    <TextView
+
+                        android:id="@+id/textuni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="5dp"
+                        android:text="University"
+                        android:textColor="@color/colortext"
+                        android:textSize="15sp" />
+
+
+                    <Spinner
+                        android:id="@+id/uni_spin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="5dp"></Spinner>
+
+
+                    <TextView
+                        android:id="@+id/textage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Age"
+                        android:textColor="@color/colortext"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/editshape"
+                        android:hint="19"
+                        android:padding="2dp"
+                        android:textColor="@color/colorheading"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/textgender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Gender"
+                        android:textColor="@color/colortext"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearprofile"
+                        style="@style/MyRadioButtonStyle"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+
+                            android:id="@+id/radiomale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="70dp"
+                            android:buttonTint="#28c43f"
+
+                           />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Male"
+                            android:padding="2dp"
+                            android:textColor="#333"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/radiofemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginStart="70dp"
+                            android:layout_toEndOf="@+id/radiomale"
+                            android:buttonTint="#28c43f"
+
+                           />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Female"
+                            android:textColor="#333"
+                            android:padding="2dp"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+                    <TextView
+
+                        android:id="@+id/textAboutme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="8dp"
+                        android:text="About me"
+                        android:textColor="@color/colortext"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editabout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.10"
+                        android:background="@drawable/linearstyle"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:text="Hi.... "
+                        android:textColor="@color/colorheading" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

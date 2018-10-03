@@ -1,0 +1,228 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.degree.college.Fragment.EventDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/detail_tool" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolBar"
+            android:layout_marginBottom="10dp"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/imageEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
+
+                    />
+
+                <TextView
+                    android:id="@+id/EdateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageEvent"
+                    android:layout_alignStart="@+id/imageEvent"
+                    android:layout_marginRight="10dp"
+                    android:background="#29c675"
+                    android:padding="10dp"
+                    android:text="Sep 12"
+
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/EdateDetail"
+                    android:background="@drawable/linearstyle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eDetailName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="start|center"
+                        android:hint="Name"
+                        android:padding="8dp"
+                        android:textColor="@color/colorheading"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/timeLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight=".12"
+                            android:src="@drawable/ic_watch" />
+
+                        <TextView
+                            android:id="@+id/eDetailTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".88"
+                            android:hint="Time"
+                            android:gravity="start|center"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colortext"
+                            android:maxLines="1"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/locLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight=".12"
+                            android:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/eDetailPlace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".88"
+                            android:hint="Place"
+                            android:textColor="@color/colortext"
+                            android:gravity="start|center"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/CommDOrg"
+                        android:layout_weight=".88"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linearstyle"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="17sp"
+                            android:textColor="#000"
+                            android:text="Organizer"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/CommDOrgIn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/CommDplc"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:weightSum="1">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/organizer"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_alignStart="@+id/dlocation"
+                                android:layout_margin="5dp"
+                                android:layout_weight=".25" />
+
+                            <TextView
+                                android:id="@+id/dorgName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center|start"
+                                android:layout_weight=".75"
+                                android:text="Organizer"
+                                android:padding="2dp"
+                                android:textColor="@color/colortext"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearEdit"
+                    android:id="@+id/des"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eDesHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Description"
+                        android:padding="2dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorheading"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/eDetailDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Description"
+                        android:textColor="@color/colortext"
+                        android:padding="10dp" />
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/buybtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_shape"
+                    android:text="Buy Tickets" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

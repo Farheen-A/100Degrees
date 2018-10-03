@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.degree.college.ChatActivity">
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_group_channel"
+        android:layout_width="match_parent"
+        android:layout_gravity="start"
+        android:theme="@style/Toolbar"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.1" />
+            <TextView
+                android:layout_width="0dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/textcen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Title"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:id="@+id/toolchat"
+                android:layout_marginEnd="3dp"
+                android:textColor="#fff"
+                android:src="@drawable/ic_action_name"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/chatactivity"
+        android:layout_width="match_parent"
+        android:layout_height="587dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        ></FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
